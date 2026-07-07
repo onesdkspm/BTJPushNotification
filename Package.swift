@@ -12,6 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/onesdkspm/UnityBridge.git", from: "2.0.0"),
+        .package(url: "https://github.com/onesdkspm/BTSDKUIKitCore.git", from: "1.0.0"),
     ],
     targets: [
         // ========== Wrapper Target（统一管理系统依赖）==========
@@ -20,6 +21,7 @@ let package = Package(
             dependencies: [
                 .byName(name: "BTJPushNotification"),
                 .product(name: "UnityBridge", package: "UnityBridge"),
+                .product(name: "BTSDKUIKitCore", package: "BTSDKUIKitCore"),
             ],
             path: "BTJPushNotificationWrapper",
             linkerSettings: [
@@ -32,8 +34,8 @@ let package = Package(
         // ========== Binary Frameworks ==========
         .binaryTarget(
             name: "BTJPushNotification",
-            url: "https://yw-depot-nexus.100bt.com/repository/onesdk-ios-trunk/spm/BTJPushNotification/2.0.0/BTJPushNotification.xcframework.zip",
-            checksum: "823afe66b085119354beb1411b0699ee3d57a651a522927b9feaa9f242f57f8a"
+            url: "https://yw-depot-nexus.100bt.com/repository/onesdk-ios-trunk/spm/BTJPushNotification/2.0.2/BTJPushNotification.xcframework.zip",
+            checksum: "41316712447b31b5a01a84259dcf9a9315bcaa22ad726ef7fbbc3acb8d5bafc9"
         )
     ]
 )
