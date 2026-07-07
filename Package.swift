@@ -34,8 +34,8 @@ let package = Package(
         // ========== Binary Frameworks ==========
         .binaryTarget(
             name: "BTJPushNotification",
-            url: "https://yw-depot-nexus.100bt.com/repository/onesdk-ios-trunk/spm/BTJPushNotification/1.0.2-dev-1474863/BTJPushNotification.xcframework.zip",
-            checksum: "a22ff3e7f2c30516a37ff892c2ebd74abbc288b8f0be5a11a564157e4762b35d"
+            url: "https://yw-depot-nexus.100bt.com/repository/onesdk-ios-trunk/spm/BTJPushNotification/2.0.2-dev-1480315/BTJPushNotification.xcframework.zip",
+            checksum: "13cffb96fe5223d456884ac10cd883554adff6c3d707c83d5fe7bc4a7a285cd2"
         )
     ]
 )
